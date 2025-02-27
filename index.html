@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/423b245e12.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>form designer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="mastercontainer">
+        <nav id="navbar">
+            <div>
+              <h2 class="headings">Form designer</h2>
+            </div>
+            <div>
+              <button id="saveformbtn">Save</button>
+              <button id="togglebtn">Dark Mode</button>
+            </div>
+          </nav>
+      
+          <div id="formbuilder">
+            <div id="controls">
+              <h2 class="headings">Components</h2>
+              <div>
+                <div class="parentdiv">
+                  <div>
+                    <p>Input</p>
+                    <i class="fa-solid fa-plus" style="color: #454545"></i>
+                  </div>
+                  <div class="hide" id="inputbtn">
+                      <form class="formch" id="inputform" action="">
+                          <input type="text" placeholder="label" >
+                          <input type="text" placeholder="placeholder" >
+                          <button type="submit">submit</button>
+                      </form>
+                  </div>
+                </div>
+                <div class="parentdiv">
+                  <div>
+                    <p>Select</p>
+                    <i class="fa-solid fa-plus" style="color: #454545"></i>
+                  </div>
+                  <div class="hide" id="selectbtn">
+                      <form  class="formch" id="selectform" action="">
+                          <input type="text" placeholder="label" >
+                          <input type="text" placeholder="option1">
+                          <input type="text" placeholder="option2">
+                          <input type="text" placeholder="option3">
+                          <button type="submit">submit</button>
+                      </form>
+                  </div>
+                </div>
+                <div class="parentdiv">
+                  <div>
+                    <p>Textarea</p>
+                    <i class="fa-solid fa-plus" style="color: #454545"></i>
+                  </div>
+                  <div class="hide" id="textareabtn">
+                      <form class="formch" id="textareaform" action="">
+                          <input type="text" placeholder="label" >
+                          <input type="text" placeholder="placeholder" >
+                          <button type="submit">submit</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="container">
+              <div id="formcontainer"></div>
+            </div>
+          </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

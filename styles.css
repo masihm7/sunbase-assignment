@@ -1,0 +1,145 @@
+@media (max-width: 425px) {
+    h2 {
+        font-size: 16px;
+    };
+    #container{
+        font-size: 12px;
+    }
+    .parentdiv{
+        font-size: 12px;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#mastercontainer{
+    max-width: 1960px;
+}
+
+h2{
+    font-weight: 300;
+    
+}
+.headings{
+    color: #616060;
+}
+
+#navbar{
+    background-color: rgb(250, 250, 250);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+nav>div:nth-of-type(2){
+    display: flex;
+    gap: 10px;
+}
+nav>div:nth-of-type(2)>button{
+    padding: 5px 10px;
+}
+#formbuilder{
+    display: flex;
+}
+#controls{
+    padding: 0px 10px;
+    flex:1;
+    background-color: rgb(245, 245, 245);
+}
+#controls>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#controls h2{
+    padding: 10px ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+#controls>div>div>div:nth-of-type(1){
+    padding: 10px 5px;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    display: flex;
+    justify-content: space-between;
+}
+#container{
+    background-color: rgb(225, 225, 225);
+    padding: 25px 0px;
+    min-height: 93vh;
+    flex:3
+}
+#formcontainer{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+#din{
+    display: flex;
+    justify-content: space-between;
+}
+#din ~ *{
+    padding: 10px;
+}
+#edbtns{
+    display: flex;
+    gap: 10px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.formch{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+}
+#textareaform{
+    padding: 10px;
+}
+#inputform{
+    padding: 10px;
+}
+#selectform{
+    padding: 10px;
+}
+
+
+/* dark mode css */
+
+#navbar.dark-mode {
+    background-color: rgb(70, 70, 70);
+    /* color: rgb(255, 255, 255); */
+}
+#controls.dark-mode{
+    background-color: rgb(122, 122, 122);
+    /* color: rgb(255, 255, 255); */
+}
+#container.dark-mode{
+    background-color: rgb(109, 109, 109);
+}
+.headingsdark{
+    color: #edecec;
+}
